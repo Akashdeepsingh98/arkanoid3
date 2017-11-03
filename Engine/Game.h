@@ -47,5 +47,6 @@ private:
 	/*  User Variables              */
 	Ball b;								//Declare a ball here.
 	FrameTimer ft;
+	RectF walls;
 	/********************************/
 };
