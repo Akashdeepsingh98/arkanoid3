@@ -1,5 +1,5 @@
 #pragma once
-#include "Vec2.h"					//The primary reason of inclusion is for 3rd and 4th constructors
+#include "Vec2.h"
 class RectF							//Since Arkanoid needs a lot of Rectangles, so we feed the idea of what a rectangle IS by making a class for rectangles specially, just like vectors.
 {
 public:
@@ -10,6 +10,7 @@ public:
 	//The following constructors take Vectors. Only reference because passing by value is heavy, and making them "const" ensures they can't be tampered with.
 	RectF(const Vec2& top_left, const Vec2& bottom_right);										//This constructor can take top-left and bottom-right coordinates of rectangle
 	RectF(const Vec2& top_left, float width, float height);										//Take only top-left coordiante and the width and height of rectangles
+	static RectF FromCenter(const Vec2& center, float HalfWidth, float HalfHeight);				//The parameters can clash with 4th constructor so using a static function as a constructor. It doesn't need an object.
 	//CONSTRUCTORS BLOCK ENDS
 
 	//FUNCTIONS BLOCK START
