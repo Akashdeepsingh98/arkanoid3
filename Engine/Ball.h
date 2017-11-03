@@ -11,6 +11,7 @@ public:
 	void ReboundX();									//Rebound the ball in X-direction
 	void ReboundY();									//Rebound the ball in Y direction
 	RectF GetRect()const;								//Get the rectangle of the ball. Don't interfere with data memebers
+	Vec2 GetVelocity();
 private:
 	static constexpr float radius = 7.0f;		//The radius of ball should be known at compile time and it will never change.
 	Vec2 pos;									//Track the position of ball on-screen.
