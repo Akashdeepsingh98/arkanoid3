@@ -48,7 +48,9 @@ private:
 	/*  User Variables              */
 	Ball b;								//Declare a ball here.
 	FrameTimer ft;
+	Brick brick;
 	RectF walls;
 	Sound soundpad;
+	Sound soundbrick;
 	/********************************/
 };
