@@ -47,9 +47,14 @@ private:
 	Graphics gfx;
 	/********************************/
 	/*  User Variables              */
-	Ball b;								//Declare a ball here.
+	static constexpr float brickWidth = 40.0f;
+	static constexpr float brickHeight = 24.0f;
+	static constexpr int nBricksAcross = 12;
+	static constexpr int nBricksDown = 4;
+	static constexpr int nBricks = nBricksAcross*nBricksDown;
+	Ball ball;
 	FrameTimer ft;
-	Brick brick;
+	Brick bricks[nBricks];
 	RectF walls;
 	Sound soundpad;
 	Sound soundbrick;

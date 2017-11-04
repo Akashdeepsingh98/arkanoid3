@@ -6,6 +6,7 @@
 class Brick
 {
 public:
+	Brick() = default;
 	Brick(const RectF& rect_in, Color color_in);		//The constructor. No need to make color reference because it is just 3 or 4 numbers.
 	void Draw(Graphics& gfx)const;						//Draw the brick on the frame. So refernce to the one and only frame is passed. Since the brick is unchanged, function ends with const.
 	bool DoBallCollsion(Ball& ball);
