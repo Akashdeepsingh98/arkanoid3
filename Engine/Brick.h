@@ -11,6 +11,7 @@ public:
 	void Draw(Graphics& gfx)const;						//Draw the brick on the frame. So refernce to the one and only frame is passed. Since the brick is unchanged, function ends with const.
 	bool DoBallCollsion(Ball& ball);
 private:
+	static constexpr float padding = 1.0f;
 	RectF rect;
 	Color color;
 	bool destroyed = false;		//For knowing if a brick is destroyed or not. Default is false because when created it must be visible.

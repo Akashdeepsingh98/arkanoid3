@@ -15,6 +15,7 @@ public:
 
 	//FUNCTIONS BLOCK START
 	bool isOverlappingWith(const RectF& other)const;		//The current rectangle is tested for collision with another rectangle of smae class. Nothing should be tampered with hence "const"
+	RectF GetExpanded(float offset)const;
 	//FUNCTIONS BLOCK ENDS
 public:
 	float left;							//represents left of rectangle
